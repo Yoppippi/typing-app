@@ -1,0 +1,51 @@
+.typing-ranking {
+    /* background-image: url("/images/bg_abstract2_green.png"); */
+    background-color: wheat;
+    height: 100%;
+}
+
+.ranking-content {
+  text-align: center;
+  border-bottom: 4px solid white;
+  width: 800px;
+  padding-top: 40px;
+  margin: 0px auto;
+}  
+
+table, th, td {
+  border-collapse: collapse;
+  /* border: 1px solid #ddd; */
+  border-bottom: 1px solid black;
+  margin: 0px auto;
+  font-size: 25px;
+  color: black;
+  padding: 10px;
+}
+
+table {
+  overflow: scroll;
+  height: 10px;
+}
+
+td {
+  text-align: center;
+}
+
+.ranking-top {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.ran-link {
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid black;
+}
+
+.ran-link:hover {
+  color: white;
+}

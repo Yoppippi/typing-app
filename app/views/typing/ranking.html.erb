@@ -1,0 +1,29 @@
+<div class="typing-ranking">
+　<div class="ranking=content">
+    <div class="ranking-top"><%= link_to 'トップへ戻る', root_path, class: "ran-link" %></div>
+    <table>
+      <thead>
+        <tr>
+          <th>順位</th>
+          <th>ニックネーム</th>
+          <th>タイム(秒)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @typing.each_with_index do |typing, i| %>
+          <tr>
+            <td><%= i + 1 %></td>
+            <% if typing.nickname.blank? %>
+              <% typing.nickname = "匿名さん"%>
+            <% else %>
+              <% typing.nickname %>
+            <% end %>
+            <td><%=typing.nickname %></td>
+            <td><%=typing.second %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+

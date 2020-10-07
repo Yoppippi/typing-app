@@ -1,0 +1,11 @@
+<div class="typing-index">
+  <p id="target-hira">10 words</p>
+  <p id="target">Click to start!</p>
+  <p id="result"></p>
+  <p id="ranking"></p>
+  <%= form_with url: typing_index_path, local: true do |f| %>
+    <%= f.text_field :nickname, id: "nickname", style: "border: none; width: 0px;" %>
+    <%= f.text_field :second, id: "second" %>
+    <%= f.submit "送信", id: "btn", style: "border: none; width: 0px;"%>
+  <% end %>
+</div>
