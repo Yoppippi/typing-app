@@ -40,16 +40,18 @@ function typing(){
   const target = document.getElementById('target');
   const targetHira = document.getElementById('target-hira')
 
-  document.addEventListener('click', () => {
+  document.addEventListener('keydown', e => {
     if (isPlaying === true) {
       return;
     }
+    if (e.key === ' ' ) {
 
     isPlaying = true;
     startTime = Date.now();
     setWord();
+    };
   });
-
+  
   document.addEventListener('keydown', e => {
     if (e.key !== word[loc]) {
       return;
