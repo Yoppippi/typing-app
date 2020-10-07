@@ -1,5 +1,6 @@
 .top {
-  background-image: url("/images/bg_school_room.jpg");
+  /* background-image: url("/images/bg_school_room.jpg"); */
+  /* background-image: url("<%= asset_path('bg_school_room.jpg') %>") */
   height: 100vh;
   background-size: cover;
 }
